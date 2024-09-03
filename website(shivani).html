@@ -1,0 +1,295 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css" />
+        <style>
+        .font{
+            font-size: 100px;
+            font-weight:10px;
+            margin-top: 200px;
+            
+        }
+        .font1{
+            font-size: 50px;
+            font-weight:7px; 
+        }
+        .font2{
+            font-size: 30px;
+            font-weight:5px;   
+        }
+        .bte{
+            width: 300px;
+            background-color: rgb(26, 7, 32);
+            font-weight: 40px;
+            border: 7px solid white;
+        }
+        .im{
+            margin-top: 100px;
+            border: 5px solid white;
+        }
+        .he{
+            margin-left: 400px;
+            font-size:50px;
+            font-weight: 20px;
+        }
+        .forms{
+        background-color:rgb(177, 192, 219);
+        margin-top:0px;
+        padding:30px;
+        width: 800px;
+        }
+        .hed{
+        text-align: center;
+        margin-left:400px;
+        margin-top:20px;
+        color:black;
+        }
+        .btw{
+        width: 130px;
+        }
+        .cont{
+            border: 9px solid black;
+        }
+        </style>
+        <script>
+        function validateForm() {
+            let y = document.forms["it"]["email"].value;
+            let c = document.forms["it"]["City"].value;
+            let x = document.forms["it"]["formname"].value;
+            let a = document.forms["it"]["add"].value;
+            if (x == "") {
+                alert("Please Enter Your Name !!!");
+                return false;
+            }
+            if (y == "") {
+                alert("Please Enter Your Email !!!");
+                return false;
+            }
+            if (c == "") {
+                alert("Please Enter Your City !!!");
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body>
+        <div class="container">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top header-scrolled">
+            
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#home">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#job">APPLY FOR JOB</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#vacancies"> VACANCIES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about"> ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </nav>
+        <section class="home " id="home">
+            <div class="container-fluid bdt">
+             <div class="row">
+              <div class="col-sm-6">
+                <h1 class="font">WELCOME</h1>
+                <h3 class="font1">IT COMPANY WEBSITE</h3>
+                <h4 class="font2">Get Job For Apply </h4>
+                <br>
+                <br>
+                <button class="btn btn-primary bte">APPLY</button> 
+              </div>
+
+              <div class="col-sm-6">
+               <img src="computer.jfif"width="100%"height="80%"class="im">
+              </div>
+             </div>
+                
+            </div>
+        </section>
+<hr>
+        <section class="job" id="job">
+             <div class="container">
+                 <div class="row">
+                  <h1 class="he">Apply for job</h1>
+                  <h5>In the contemporary world economy, India is the largest exporter of IT. Exports dominate the Indian IT industry and constitute about 79% of the industry's total revenue. However, the domestic market is also significant, with robust revenue growth. The industry's share of total Indian exports (merchandise plus services) increased from less than 4% in FY1998 to about 25% in FY2012. The technologically-inclined services sector in India accounts for 40% of the country's GDP and 30% of export earnings as of 2006, while employing only 25% of its workforce, according to Sharma (2006). </h5>
+                 </div>
+                 
+                 <form action="post"name="it">
+                    <div class="row">
+                       <h2 class="hed">Job Application Form</h2>
+                    </div>
+                     <div class="container forms">
+                      
+                      
+                      <div class="row">
+                        <div class="col-sm-6 form-group">
+                           <input type="text" class="form-control" name="formname"id="fn"placeholder="First name"required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                          <input type="text" class="form-control" name="formname"id="ln"placeholder="Last name"required>
+                        </div>
+                      </div>
+                      
+                       <div class="row">
+                         <div class="col-sm-6 form-group">
+                           <input type="email" class="form-control" name="email"id="email"placeholder="Email"required>
+                         </div>
+                         <div class="col-sm-6 form-group">
+                          <input type="text" class="form-control"id="phoneno"placeholder="Phone no"required>
+                        </div>
+                       </div>
+                     
+                       <div class="row">
+                         <div class="col-sm-12 form-group">
+                          <input type="text" class="form-control"name="city"id="city"placeholder="City">
+                         </div>
+                       </div>
+                       
+                       <div class="row">
+                         <div class="col-sm-12 form-group">
+                           <input type="text" class="form-control"id="add"name="add"placeholder="Address">
+                         </div>
+                       </div>
+                       
+                       <select class="form-control form-group" type="text" id="country">
+                         <option>---select country--</option>
+                         <option>India</option>
+                         <option>USA</option>
+                         <option>Dubai</option>
+                       </select>
+                       
+                       <select class="form-control form-group" type="text" id="country">
+                         <option>---choose desired position--</option>
+                         <option> web desinging</option>
+                         <option> machine learning</option>
+                         <option> python coder</option>
+                         
+                       </select>
+                       
+                       <textarea row="5"class="form-control form-group" placeholder="Additional Info"></textarea>
+                       
+                       <div class="row">
+                         <div class=" col-sm-12 form-group">
+                          <button class="btn btn-primary  btw"type="submit" onclick="validateForm();">Submit</button>
+                          <button class="btn btn-primary  btw"type="reset">Reset</button>
+                   
+                         </div>
+                     </div>
+                       
+                     </div>
+                    </form>
+                   
+        </section>
+
+        <hr>
+
+        <section class="Vacancies" id="vacancies">
+        <div class="container-fluid">
+           <div class="row">
+            <h1 class=" he">vacancies in company</h1>
+           </div>
+           <br>
+           <h4>System Engineer - information technology</h4>
+           <br>
+           0-2 years.
+           <br>
+           bangalore ,mumbai,pune.
+           <br>
+           installation,networking,configuration,computer hardware.
+           <br>
+           <h4>Software Developer information technology</h4>
+           <br>
+           1-3 years
+           <br>
+           mumbai(all areas)
+           <br>
+           c#,mysql,javascript,php,json,mvc,jouery.
+           <br>
+           <h4>General manager information technology</h4>
+           <br>
+           10-15 years
+           <br>
+           ponta sahib
+           <br>
+           management,SAP,networking,HP data projector.
+           <br>
+           <h4>manager information technology</h4>
+           <br>
+           8-10years
+           <br>
+           Gurgon
+           <br>
+           networking,server,ms exchange,operating systems.
+           <br>
+        </div>
+        </section>
+        <hr>
+        <section class="about" id="about">
+            <h1 class="he">ABOUT US IT COMPANY</h1>
+            <hr>
+            <h3>IT INFORMATION</h3>
+            <br>
+            <h5> Information technology (IT) is the use of computers to create, process, store, and exchange all kinds of electronic data[¹] and information.<br> It is typically used within the context of business operations as opposed to personal or entertainment technologies. <br> IT is considered to be a subset of information and communications technology (ICT).<br> An information technology system (IT system) is generally an information system, a communications system, or, more specifically speaking, a computer system - including all
+            
+            hardware, software, and peripheral equipment
+            
+             operated by a limited group of IT users.<br>  Humans have been storing, retrieving, manipulating, and communicating information since the Sumerians in Mesopotamia developed writing in about 3000 BC.<br>  However, the term information technology in its modern sense first appeared in a 1958 article published in the Harvard Business Review, authors Harold J.<br>  Leavitt and Thomas L. Whisler commented that "the new technology does not yet have a single established name.<br>  We shall call it information technology (IT).<br> " Their definition consists of three categories: techniques for processing, the application of statistical and mathematical methods to decision-making, and the simulation of higher-order thinking through computer programs.<br> The term is commonly used as a synonym for computers and computer networks, but it also encompasses other information distribution technologies such as television and telephones. Several products or services within an economy are associated with information technology, including computer hardware, software, electronics, semiconductors, internet, telecom equipment, and e-commerce.</h5>
+        </section>
+        <hr>
+        <section class="contact" id="contact">
+            <h1 class="he"> CONTACT US </h1>
+            <form method="POST" name="contact.html">
+            <div class="container">
+                <h4>contact us</h4>
+                 <div class="row">
+                   <div class="col-sm-6">
+                    <div class="row form-group">
+                        <div class="col-sm-6">
+                            <label for="fname" class="label-control fmtlabel">Full Name </label>
+                            <input type="text" class="form-control" id="fname" name="textname" placeholder="Name" required>
+                        </div>
+                        <div class="col-sm-6">
+                            <label for="email" class="label-control fmtlabel">Email </label>
+                            <input type="email" class="form-control" id="email" name="textem" placeholder="Email" required>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-sm-12">
+                            <label for="sub" class="label-control fmtlabel">Subject </label>
+                            <input type="text" class="form-control" id="sub" name="textsub" placeholder="Subject">
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-sm-12">
+                            <label for="message" class="label-control fmtlabel">Message </label>
+                                <textarea class="form-control" id="message" name="textmsg" rows="3" placeholder="Message"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="row form-group">
+                        <div class="col-sm-12">
+                            <button type="submit" class="btn btn-default " style="color:white; background-color:orangered"> Send Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                 <img src="map.jpg" width="300px" height="430px">
+                </div>
+                </div>
+            </div>
+                </form>
+        </section>
+       </div>     
+    </body>
+</html> 

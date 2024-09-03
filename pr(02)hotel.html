@@ -1,0 +1,103 @@
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+ .hotel{
+  background-image:url('hotel.jfif');
+  background-position:center;
+  background-size:100% 100%;
+
+ }
+ .flm{
+  background-color:rgb(151, 152, 255);
+  padding:10px;
+  width:800px;
+  margin-top: 100px;
+  margin-left: 700px;
+  border: 15px solid rgb(16, 16, 37);
+ }
+ h3{
+  font-weight:700;
+  font-size:50px;
+  color:white;
+  margin-right:10px;
+ }
+ .fols{
+  padding:0px;
+  color:rgb(48, 28, 28);
+ }
+</style>
+<body class="hotel">
+  <form method="post" action="hotel.html">
+   <div class="contanier flm">
+     <h3 style="text-align: center;color: black;">HOTEL BOOKING</h3>
+    <div class="row">
+      <div class="col-sm-6 form-group">
+          <input type="text" class="form-control" id="name" placeholder="enter your name">
+          <label for="name" class="fols">NAME*</label>
+      </div>
+
+       <div class="col-sm-6">
+         <input type="email" class="form-control" id="email" placeholder="enter your eamil">
+         <label for="email" class="fols"> EMAIL* </label>
+      </div>
+     </div>
+     
+     <div class="row">
+      <div class="col-sm-6">
+      <select class="form-control" id="roomtype" type="text">
+      <option>None</option>
+      <option>Deluxe</option>
+      <option>Standard</option>
+      <option>joint</option>
+      <option>Suite</option>
+      </select>
+      <label for="roomtype"class="fols"> Room Type *</label>
+      </div>
+        <div class="col-sm-6">
+            <input type="number" class="form-control" id="phoneno" placeholder="xxxxx-xxxxx">
+            <label for="phoneno" class="fols">PHONE NO*</label>
+        </div>
+     </div>
+     
+      <div class="row">
+        <div class="col-sm-6">
+         <input type="date" class="form-control" id="checkin" placeholder="dd/mm/yyyy">
+         <label for="checkin" class="fols">CHECK IN & TIME *</label>
+        </div>
+
+       <div class="col-sm-6">
+         <input type="date" class="form-control" id="checkout" placeholder="dd/mm/yyyy">
+         <label for="checkout" class="fols">CHECK OUT & TIME *</label>
+       </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-6">
+         <select type="number" class="form-control" for="noofguest">
+         <option>0</option>
+         <option>1</option>
+         <option>2</option>
+         <option>3</option>
+         <option>4</option>
+         <option>5</option>
+         <option>6</option>
+         <option>7</option>
+         <option>8</option>
+         <option>9</option>
+         </select>
+         <label for="noofguest" class="fols">NO OF GUESTS * </label>
+         </div>
+      </div>
+       <div class="row">
+           <div class="offset-sm-4">
+            <button class="btn btn-success " type="reset">CLEAR DATA *</button>
+
+            <button class="btn btn-danger " type="reset">CLEAR DATA *</button>
+           </div>
+       </div>
+   </div>
+  </form>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    
+    <style>
+        .buttn{
+            padding: 9px;
+            width: 100px;
+            margin-top: 30px;
+        }
+        .inp{
+            margin-top: 30px;
+            padding: 9px;
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+       <div class="row">
+           <div class="col-sm-6">
+               <input type="text" name="ch-name" id=""placeholder="chapter name" class="form-control inp">
+           </div>
+           <div class="col-sm-6">
+                <button type="button"class="btn btn-success buttn" id="add_btn">Add</button>
+           </div>
+       </div>
+       <div class="row">
+           <div class="col-sm-6">
+               <ul id="parentlist" class="list-group1">
+                   <li class="list-group-item">chapter 1</li>
+               </ul>
+           </div>
+       </div>
+   </div>
+   <script>
+       let addbtn = document.getElementById('add_btn')
+       addbtn.addEventListener('click',addch)
+       function addch(e)
+       {
+           let currentbtn = e.currenttar;
+           let currentinput = currentbtn.previousElementSibling
+
+           let newli = document.createAttribute('li')
+           newli.classlist.add('list-group-item')
+           newli.textcontent = currentinput.value
+
+           let parentlist = document.getElementById('parentlist');
+           parentlist.appendChild(newli)
+       }
+   </script>
+</body>
+</html>
+ -->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>

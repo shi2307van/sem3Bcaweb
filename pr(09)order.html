@@ -1,0 +1,424 @@
+
+
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+<script rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+<style type="text/css">
+body{
+background-color:black;
+}
+.forms{
+background-color:rgb(59, 84, 226);
+text-align:center;
+padding:15px;
+font-size:30px;
+font-weight:50px;
+width:100%;
+color:white;
+}
+.cont{
+background-color:rgb(255, 255, 255);
+border: 30px solid rgb(147, 147, 228);
+}
+.btne{
+background-color:rgb(119, 117, 228);
+font-size:15px;
+}
+input{
+    border: solid 2px blue;
+}
+</style>
+</head>
+<body>
+ <form method="post" action="order.html">
+   <div class="container cont">
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <h3 class="forms">personal information</h3>
+          <hr>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3 form-group">
+          <h5>name : </h5>
+        </div>
+        <div class="col-sm-3 form-group">
+           <input type="text"class="form-control" id="fn">
+           <label for="fn">first name</label>
+        </div>
+        <div class="col-sm-3 form-group">
+           <input type="text"class="form-control" id="mn">
+           <label for="mn">middel name</label>
+        </div>
+   
+        <div class="col-sm-3 form-group">
+           <input type="text"class="form-control" id="ln">
+           <label for="ln">last name</label>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-3 form-group">
+           <h5>email id : </h5>
+        </div>
+        
+        <div class="col-sm-6 form-group">
+          <input type="email"class="form-control"id="email"placeholder="e.g.xyz@gamil.com">
+        </div>
+      </div>
+      <br>
+      <div class="row">
+         <div class="col-sm-3 form-group">
+             <h5>contact no :</h5>
+         </div>
+      
+        <div class="col-sm-6 form-group">
+           <input type="number"class="form-control"id="contactno"placeholder="e.g.99000 12000">
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-sm-12 form-group">
+           <h3 class="forms">billing information</h3>
+        <hr>
+       </div>
+     </div>
+
+     <div class="row">
+         <div class="col-sm-3 form-group">
+            <h5>address:</h5>
+         </div>
+     
+        <div class="col-sm-6 form-group">
+          <textarea class="form-control"></textarea>
+       </div>
+     </div>
+     
+     <div class="row">
+        <div class="col-sm-3 form-group">
+           <h5>area :</h5>
+        </div>
+     
+       <div class="col-sm-6 form-group">
+          <input type="text"class="form-control"id="area">
+       </div>
+     </div>
+     
+     <div class="row">
+     <div class="col-sm-3 form-group">
+     <h5>city :</h5>
+     </div>
+     
+     <div class="col-sm-6 form-group">
+     <select class="form-control"type="text">
+     <option>---select city----</option>
+     <option>surat</option>
+     <option>pune</option>
+     <option>mumbai</option>
+     <option>bhopal</option>
+     <option>delhi</option>
+     </select>
+     </div>
+     </div>
+     
+     <div class="row">
+        <div class="col-sm-3 form-group">
+        <h5>state :</h5>
+        </div>
+        
+        <div class="col-sm-6 form-group">
+        <select class="form-control"type="text">
+        <option>---select state----</option>
+        <option>gujrat</option>
+        <option>bihar</option>
+        <option>m,p</option>
+        <option>u.p</option>
+        <option>goa</option>
+        </select>
+        </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-3 form-group">
+            <h5>country :</h5>
+            </div>
+            
+            <div class="col-sm-6 form-group">
+            <select class="form-control"type="text">
+            <option>---select country----</option>
+            <option>india</option>
+            <option>nepal</option>
+            <option>america</option>
+            <option>chin/option>
+            <option>pakistan</option>
+            </select>
+            </div>
+        </div>
+
+      <div class="row">
+       <div class="col-sm-12 form-group">
+         <h3 class="forms">order information</h3>
+         <hr>
+      </div>
+     </div>
+      
+      <div class="row">
+          <div class="col-sm-2 form-group">
+              <h5>payment number</h5>
+          </div>
+          <div class="col-sm-3 form-group">
+            <h5>payment name</h5>
+        </div>
+        <div class="col-sm-3 form-group">
+            <h5>discription</h5>
+        </div>
+        <div class="col-sm-1 form-group">
+            <h5>price</h5>
+        </div>
+        <div class="col-sm-1 form-group">
+            <h5>qty</h5>
+        </div>
+        <div class="col-sm-1 form-group">
+            <h5>discount</h5>
+        </div>
+        <div class="col-sm-1 form-group">
+            <h5> amount</h5>
+        </div>
+       </div>
+
+       <div class="row">
+        <div class="col-sm-2 form-group">
+           <input type="number"class="form-control">
+        </div>
+        <div class="col-sm-3 form-group">
+            <input type="text"class="form-control">
+        </div>
+      <div class="col-sm-3 form-group">
+        <input type="text"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+     </div>
+
+     <div class="row">
+        <div class="col-sm-2 form-group">
+           <input type="number"class="form-control">
+        </div>
+        <div class="col-sm-3 form-group">
+            <input type="text"class="form-control">
+        </div>
+      <div class="col-sm-3 form-group">
+        <input type="text"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+     </div>
+
+     <div class="row">
+        <div class="col-sm-2 form-group">
+           <input type="number"class="form-control">
+        </div>
+        <div class="col-sm-3 form-group">
+            <input type="text"class="form-control">
+        </div>
+      <div class="col-sm-3 form-group">
+        <input type="text"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+     </div>
+
+     <div class="row">
+        <div class="col-sm-2 form-group">
+           <input type="number"class="form-control">
+        </div>
+        <div class="col-sm-3 form-group">
+            <input type="text"class="form-control">
+        </div>
+      <div class="col-sm-3 form-group">
+        <input type="text"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+     </div>
+
+     <div class="row">
+        <div class="col-sm-2 form-group">
+           <input type="number"class="form-control">
+        </div>
+        <div class="col-sm-3 form-group">
+            <input type="text"class="form-control">
+        </div>
+      <div class="col-sm-3 form-group">
+        <input type="text"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+      <div class="col-sm-1 form-group">
+        <input type="number"class="form-control">
+      </div>
+     </div>
+
+      <div class="row">
+          <div class="offset-sm-6 col-sm-2 form-group">
+              <h5>total amount:</h5>
+         </div>
+         <div class="col-sm-4 form-group">
+            <input type="number"class="form-control">
+         </div>
+      </div>
+     
+     <div class="row">
+        <div class="col-sm-12 form-group">
+          <h3 class="forms">payment information</h3>
+          <hr>
+        </div>
+     </div>  
+
+        <div class="row">
+           <div class="col-sm-12 form-group">
+              <h3><b>credit card information</b></h3>
+           </div>
+        </div>
+        
+
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <h4>select option : </h4>
+          </div>
+          <div class=" col-sm-4 form-group">
+          <select class="form-control" type="text">
+            <option>---select your creadit card---</option>
+          </select>
+          </div>
+        </div>
+        
+
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <h4>card number : </h4>
+          </div>
+          <div class=" col-sm-4 form-group">
+          <input type="number" class="form-control"id="cdno" placeholder="xxxx-xxxx-xxxx">
+          </div>
+        </div>
+   
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <h4>card holdername : </h4>
+          </div>
+          <div class=" col-sm-4 form-group">
+          <input type="text" class="form-control"id="cname">
+          </div>
+        </div>
+   
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <h4>expiry date : </h4>
+          </div>
+          <div class=" col-sm-2 form-group">
+          <input type="month" class="form-control"id="month" >
+          </div>
+          <div class=" col-sm-2 form-group">
+            <input type="year" class="form-control"id="year" >
+            </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-sm-3 form-group">
+            <h4>cvv number : </h4>
+          </div>
+          <div class=" col-sm-2 form-group">
+           <input type="number" class="form-control"id="month" >
+          </div>
+       </div>
+
+       <div class="row">
+       <label>
+       <input type="checkbox" name="subscribe">
+         save card details for next puarchase(we do not save cvv details)
+       </label>
+       </div>
+       
+       <button class="btne">Make payment</button>
+       
+       <div class="row">
+       <div class="col-sm-12 form-group">
+       <h3><b>Mobile wallet</b></h3>
+       </div>
+       </div>
+       
+       <div class="row">
+       <div class="col-sm-12 form-group">
+       <h3><b>debit card information</b></h3>
+       </div>
+       </div>
+       
+       <div class="row">
+       <div class="col-sm-12 form-group">
+       <h3><b>Net Banking</b></h3>
+       </div>
+       </div>
+       
+    
+          <button class="btn btn-success">Submit</button>
+    
+         <button class="btn btn-danger">Clear</button>
+      
+     </div>
+   </div>
+ </form>
+</body>
+</html>
+
+

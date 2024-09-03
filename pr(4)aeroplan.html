@@ -1,0 +1,120 @@
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+<style type="text/css">
+.flight{
+   background-image:url('aeroplane.jfif');
+   background-repeat: no-repeat;
+   background-attachment:fixed ;
+   background-size: 100% 100%;
+   background-position:center;
+}
+.flightds{
+   background-color:white;
+   padding:50px;
+   width:800px;
+   margin-left:700px;
+   margin-top:0px;
+}
+h3{
+  margin-top:150px;
+  margin-left:190px;
+}
+button{
+  width:100%;
+ 
+}
+</style>
+
+<body class="flight">
+<h3> Book your flight today </h3>
+  <form method="post" action="frmsubmit.html">
+  <div class="container flightds">
+  
+    <div class="row">
+      <div class="col-sm-2">
+         <input type="radio" class="form-control" id="roundtrip"name="rtrip">
+         <label for="roundtrip">ROUNDTRIP</label>
+      </div>
+      
+      <div class="col-sm-2">
+          <input type="radio" class="form-control" id="one"name="rtrip">
+          <label for="one">ONE-WAY</label>
+      </div>
+      
+      <div class="col-sm-2">
+          <input type="radio" class="form-control" id="multi"name="rtrip">
+          <label for="many">MULTI-WAY</label>
+      </div>
+     </div>
+     <br>
+     
+     <div class="row">
+       <div class="col-sm-6">
+            <label for="textfrom">FLYING FROM</label>
+            <input type="text" class="form-control" id="textfrom"name="textfrom" placeholder="city of airport">
+       </div>
+       
+       <div class="col-sm-6">
+           <label for="textfrom">FLYING TO</label>
+            <input type="text" class="form-control" id="textto"name="textfrom" placeholder="city of airport">
+       </div>
+     </div>
+     
+     <div class="row"> 
+       <div class="col-sm-6">
+          <label for="depart">DEPARTING</label>
+          <input type="date"id="depart"class="form-control"placeholder="mm/dd/yyyy">
+       </div>
+       <div class="col-sm-6">
+      +      <label for="departr">RETURNING</label>
+            <input type="date" class="form-control" id="departr" placeholder="mm/dd/yyyy">
+       </div>
+     </div>
+     <br>
+     
+     <div class="row">
+       <div class="col-sm-4">
+        <label for="adults" >ADULTS(18+)</label>   
+        <input type="number"class="form-control"id="adults"name="age"placeholder="18+">
+       </div>
+       
+       <div class="col-sm-4">
+       <label for="chid">CHIDREN(0-17)</label>
+       <select class="form-control"id="chid"name="age">
+       <option>0</option>
+       <option>1</option>
+       <option>2</option>
+       <option>3</option>
+       <option>4</option>
+       <option>5</option>
+       <option>6</option>
+       <option>7</option>
+       <option>8</option>
+       <option>9</option>
+       <option>10</option>
+       <option>11</option>
+       <option>12</option>
+       <option>13</option>
+       <option>14</option>
+       <option>15</option>
+       <option>16</option>
+       <option>17</option>
+       </select>
+       </div>
+       
+       <div class="col-sm-4">
+        <label>TRAVEL CLASSES</label>
+        <select class="form-control" id="eclass"type="text"name="age">
+        <option>Economy class</option>
+        </select>
+       </div>
+     </div>
+     
+     <br>
+     <button class=" btn btn-success" type="submit">SHOW FLIGHTS</button>
+    </div>
+  </div>
+</body>
+</html>

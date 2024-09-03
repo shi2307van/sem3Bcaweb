@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/Javascript">
+function validate()
+{
+     var no;
+     var card;
+     no = document.getElementById("cardno").value; 
+     card=document.getElementById("ddcard").value;
+
+    if(card==1)
+    {
+     if(no.length!=15)
+        alert("Length of card number should be 15."); 
+        
+     else if(no.substring(0,2)!="34" && no.substring(0,2)!="37") 
+         alert("The card number should start with 34 or 37.");
+    }
+
+   if (card == 2)
+   {
+      if (no.length !=13 && no.length!=16)
+         alert("Length of card number should be 13 or 16 .");
+           
+      else if (no.substring(0,2)!="4")
+          alert("The card number should start with 4.");
+   }
+   if(card==3)
+    {
+      if(no.length!=16)
+         alert("Length of card number should be 16."); 
+      else if(no.substring(0,2)!="51" && no.substring(0,2)!="55") 
+         alert("The card number should start with 51 or 55.");
+    }
+} 
+
+    </script>
+<style type="text/css">
+ body{
+ background-color:pink;
+ }
+ .cont{
+ background-color:gray;
+ padding:10px;
+ margin-top:50px;
+ border:10px solid black;
+ width: 600px;
+ }
+ </style>
+</head>
+
+<body>
+ <form name="frm" onsubmit="return validate()">
+   <div class="container cont">
+     <div class="row">
+      <div class="col-sm-6 form-group">
+      <select name="ddcard" id="ddcard" class="form-control">
+      <option value="1">Americal Express</option> 
+      <option value="2">Visa</option>
+      <option value="3">Master Card</option>
+      </select>
+      </div>
+     </div>
+      
+      <div class="row">
+      <div class="col-sm-6 form-group">
+      <input type="text" name="cardno" id="cardno"class="form-control" />
+      </div>
+      </div>
+    
+     <button class="btn btn-success boot">Submit</button>
+   </div>
+  </form>
+</body>
+</html>
+

@@ -1,0 +1,119 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+        <script type="text/javascript">
+            function maximum()
+               {
+                   var r1 = document.getElementById("txtno1").value;
+                   var r2 = document.getElementById("txtno2").value;
+                   var r3 = document.getElementById("txtno3").value;
+                   var area,l;
+                   if(r1=="" || r2=="" || r3=="")
+                   {
+                       alert("please enter for value");
+                       
+                   }
+                   else if(isNaN(r1))
+                   {
+                       alert("enter only digits for no1");
+                       document.getElementById("txtno1").value="";
+                       document.getElementById("txtno1").focus();
+                   }
+                   else if(isNaN(r2))
+                   {
+                       alert("enter only digits for no2");
+                       document.getElementById("txtno2").value="";
+                       document.getElementById("txtno2").focus();
+                   }
+                   else if(isNaN(r3))
+                   {
+                       alert("enter only digits for no3");
+                       document.getElementById("txtno3").value="";
+                       document.getElementById("txtno3").focus();
+                   }
+                   else
+                   {
+                       r1=parseInt(r1);
+                       r1=parseInt(r2);
+                       r1=parseInt(r3);
+                       if(r1>r2)
+                             if(r1>r3)
+                                    document.getElementById("txtmax").value = r1;
+                             else 
+                                    document.getElementById("txtmax").value = r3;
+                        else if(r2>r3)
+                             document.getElementById("txtmax").value = r2;
+                        else
+                             document.getElementById("txtmax").value = r3;
+                   }
+               }
+        </script>
+        <style>
+            .con{
+                background-color: blueviolet;
+                border: 3px solid black;
+                padding: 10px;
+            }
+            h1{
+                text-align: center;
+                color: white;
+            }
+            label{
+                color: white;
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+      <form method="POST" name="area of circle.html">
+        <div class="container con">
+           <div class="row">
+              <div class="col-sm-12">
+                <h1>CALCULATE A MAXIMUM NO</h1>
+              </div>
+           </div>
+           <div class="row">
+             <div class="col-sm-3 form-group">
+                <label for="txtno1"> First no :</label>
+             </div>
+             <div class="col-sm-9 form-group">
+                <input type="text" id="txtno1" class="form-control">
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-sm-3 form-group">
+                <label for="txtno2"> Second no :</label>
+             </div>
+             <div class="col-sm-9 form-group">
+                <input type="text" id="txtno2" class="form-control">
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-sm-3 form-group">
+                <label for="txtno3"> Third no :</label>
+             </div>
+             <div class="col-sm-9 form-group">
+                <input type="text" id="txtno3" class="form-control">
+             </div>
+           </div>
+           <div class="row">
+             <div class="col-sm-3 form-group">
+                <label for="txtmax">MAXIMUM NO :</label>
+             </div>
+             <div class="col-sm-9 form-group">
+                <input type="text" id="txtmax" class="form-control" readonly>
+             </div>
+          </div>
+
+          <div class="row">
+              <div class="offset-sm-3 col-sm-4 form-group">
+                 <button type="button" class="btn btn-block btn-success" onclick="maximum()"> CALCULATE</button>
+              </div>
+              <div class="col-sm-4 form-group">
+                <button type="reset" class="btn btn-block btn-danger">reset</button>
+             </div>
+         </div>
+        </div>
+    </form>
+    </body>
+</html>

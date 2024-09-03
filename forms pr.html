@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <style>
+        .bten{
+            width: 100%;
+        }
+        h2{
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <form action="post" name="myform" onsubmit="return validate()">
+        <div class="container">
+            <h2> enter your details</h2>
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input type="text" name="fname" id="fname" class="form-control" placeholder="enter your fname">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input type="text" name="lname" id="lname" class="form-control" placeholder="enter your lname">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <input type="email" name="email" id="email" class="form-control" placeholder="enter your email" onblur="validateEmail()">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <input type="text" class="form-control" name="phno" id="phno"placeholder="enter your phone no" onblur="validatePhoneno()">
+                </div>
+                <div class="col-sm-6 form-group">
+                    <input type="text" class="form-control" name="city" id="city"placeholder="enter your city" >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12 form-group">
+                    <input type="text" name="doj" id="doj" class="form-control" placeholder="enter your doj" >
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 form-group">
+                    <button type="submit" class="btn btn-success bten">submit</button>
+                </div>
+                <div class="col-sm-6 form-group">
+                    <button type="reset" class="btn btn-danger bten">reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        function validate()
+        {
+            let x = document.forms["myform"]["fname"].value;
+            if (x == "")
+            {
+                alert("please enter fname.... ?")
+                return false;
+            }
+            let y = document.forms["myform"]["lname"].value;
+            if (y == "")
+            {
+                alert("please enter lname.... ?")
+                return false;
+            }
+            let a = document.forms["myform"]["email"].value;
+            if (a == "")
+            {
+                alert("please enter email.... ?")
+                return false;
+            }
+            let b = document.forms["myform"]["phno"].value;
+            if (b == "" )
+            {
+                alert("please enter phone no ?")
+                return false;
+            }
+            let c = document.forms["myform"]["city"].value;
+            if (c == "")
+            {
+                alert("please enter city ?")
+                return false;
+            }
+            let d = document.forms["myform"]["doj"].value;
+            if (d == "")
+            {
+                alert("please enter doj ?")
+                return false;
+            }
+        }
+        function validateEmail() 
+        {
+            let emailid = document.forms["myform"]["email"].value;
+            atpos = emailid.indexOf('@');
+            dotpos = emailid.lastIndexOf('.');
+
+            if(atpos < 1 ||(dotpos - atpos < 2)||dotpos + 2>=emailid.length)
+            {
+                alert("please enter correct email id");
+                return false;
+            }
+        }
+        function validatePhoneno()
+        {
+            let phno = document.forms["myform"]["phno"].value;
+            if(phno >=0|| phno<11)
+                {
+                    alert("please enter correct no")
+                }
+            return false;
+        }
+    </script>
+</body>
+</html>

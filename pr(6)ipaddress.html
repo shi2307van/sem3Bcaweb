@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+<script rel="stylesheet" href="bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+
+<script type="text/Javascript">  
+  var Iptext;
+ function checkIp(Iptext)
+ {
+  var flag=false;
+  if (Iptext=="")
+  {
+    alert("please enter Ip address");
+    return;
+  }
+  ipParts = Iptext.split(".");
+  if(ipParts.length==4)
+  {
+     for(i=0;i<4;i++)
+     {
+        flag = isNaN(ipParts[i]);
+        if(flag==true)
+        {
+          alert("Ip address not contain any alphabet or special characters...");
+          break;
+        }
+        else
+        {
+          Num = parseInt(ipParts[i]);
+          if (Num>=0 && Num<=255)
+          {
+            continue;
+          }
+          else
+          {
+            alert("you have enter invalid ip address ...");
+            flag=true;
+            break;
+          }
+        }
+     }
+  
+  }
+  else
+  {
+    alert ("please enter valid ip address......");
+    flag=true;
+  }
+  if (flag==flase)
+  {
+    alert("your ip address is valid...");
+  }
+}
+
+
+
+</script>
+<style type="text/css">
+body{
+background-color:#f45;
+}
+.cont
+{
+background-color:white;
+margin-top:30px;
+border:10px solid blue;
+}
+.cls
+{
+ text-align:center;
+ 
+}
+</style>
+</head>
+<body>
+
+ <form method="post" class="form-horizontal" name="test">
+  <div class="container cont">
+    <div class="row">
+      <div class="col-sm-12">
+      <h2 class="cls">IP VALIDATION</h2>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-sm-3 form-group">
+      <label for="ip">Enter Ip Address : </label>
+      </div>
+      
+      <div class="col-sm-9 form-group">
+       <input type="text"id="ip"class="form-control">
+      </div>
+    </div>
+    <br>
+    <div class="row">
+    <div class=" offset-sm-3 col-sm-4 form-group">
+    <button type="submit" class="btn btn-block btn-success"onclick="checkIp(document.text.ip.value)">Submit</button>
+    </div>
+    
+    <div class="col-sm-4 form-group">
+    <button type="reset" class="btn btn-block btn-danger">reset</button>
+    </div>
+    </div>
+    </div>
+  </div>
+ </form>
+</body>
+</html>
+
